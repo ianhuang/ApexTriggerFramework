@@ -29,7 +29,7 @@
 ### Data loading & DML Consolidation
 * Consolidate common data loading in TriggerDataManager
 * Consolidate DMLs in TriggerDataManager
-* Virtual method (getReocrdIdSet) in TriggerHandlerBase class provide a way to "force" developers to restrict the data for trigger handler processing 
+* Virtual method to restrict data - Fast code execution and future proof
 
 ### Trigger bypass & Muting
 * Configurable trigger muting
