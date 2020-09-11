@@ -24,7 +24,7 @@
 * Single purpose handler class means developers will never override each other's code
 
 ### Order of Execution
-* First binding first execution
+* Trigger handlers are executed in the order they are bound
 
 ### Data loading & DML Consolidation
 * Consolidate common data loading in TriggerDataManager
