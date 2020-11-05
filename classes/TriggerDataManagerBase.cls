@@ -46,7 +46,7 @@ public abstract class TriggerDataManagerBase {
             Database.SaveResult result = insertResult[i];
             if (!result.isSuccess()) {
                 for (Database.Error err : result.getErrors()) {
-                    ApplicationLogHelper.logDMLError('Trigger', 'TriggerDataManagerBase', 'handleErrors - insertResult', err);
+                    //ApplicationLogHelper.logDMLError('Trigger', 'TriggerDataManagerBase', 'handleErrors - insertResult', err);
                     throw new TriggerDataManagerException(err.getMessage());
                 }
             }
@@ -56,7 +56,7 @@ public abstract class TriggerDataManagerBase {
             Database.SaveResult result = updateResult[i];
             if (!result.isSuccess()) {
                 for (Database.Error err : result.getErrors()) {
-                    ApplicationLogHelper.logDMLError('Trigger', 'TriggerDataManagerBase', 'handleErrors - updateResult', err);
+                    //ApplicationLogHelper.logDMLError('Trigger', 'TriggerDataManagerBase', 'handleErrors - updateResult', err);
                     throw new TriggerDataManagerException(err.getMessage());
                 }
             }
@@ -66,7 +66,7 @@ public abstract class TriggerDataManagerBase {
             Database.DeleteResult result = deleteResult[i];
             if (!result.isSuccess()) {
                 for (Database.Error err : result.getErrors()) {
-                    ApplicationLogHelper.logDMLError('Trigger', 'TriggerDataManagerBase', 'handleErrors - deleteResult', err);
+                    //ApplicationLogHelper.logDMLError('Trigger', 'TriggerDataManagerBase', 'handleErrors - deleteResult', err);
                     throw new TriggerDataManagerException(err.getMessage());
                 }
             }
