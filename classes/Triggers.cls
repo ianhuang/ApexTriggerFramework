@@ -146,7 +146,8 @@ public class Triggers {
                     	handlers[i].handle();
                     } catch(Exception ex) {
                         //log exception
-                        ApplicationLogHelper.logException('Trigger', 'Triggers', 'execute - ' + String.valueOf(handlers[i]).split(':')[0], ex);
+                        //Enbale the line below once you install the ApplicationLog framework
+                        //ApplicationLogHelper.logException('Trigger', 'Triggers', 'execute - ' + String.valueOf(handlers[i]).split(':')[0], ex);
                         //raise exception again
                         throw ex;
                     }
