@@ -45,3 +45,6 @@
 ## Sample Code 
 Sample code can be found here:
 https://github.com/ianhuang/AppFrameworkExamples
+
+## Original Trigger template by Abhinav Gupta
+http://www.tgerm.com/2012/01/salesforce-apex-trigger-template.html
